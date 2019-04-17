@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "bbf1c3ed-d852-49c3-b46d-52e1f79aed29",
+		"name": "Testes AEP IDO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/tarefa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"descricao\": \"Pojeto 11\",\n\t\"dataCriacao\": \"15/04\",\n\t\"situacao\": \"NAO_INICIADA\",\n\t\"responsavel\": \"Cesaasddsa\",\n\t\"horasEstimadas\": \"544\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/tarefa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarefa"
+					]
+				},
+				"description": "POST tarefa"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/tarefa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"descricao\": \"Pro2122 1\",\n\t\"dataCriacao\": \"15/04\",\n\t\"situacao\": \"NAO_INICIADA\",\n\t\"responsavel\": \"Cesar\",\n\t\"horasEstimadas\": \"55\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/tarefa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarefa"
+					]
+				},
+				"description": "GET tarefa"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/tarefa/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/tarefa/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarefa",
+						"2"
+					]
+				},
+				"description": "get tarefa por ID"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/tarefa/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"descricao\": \"Pojeto 32234234211\",\n\t\"dataCriacao\": \"15/04\",\n\t\"situacao\": \"NAO_INICIADA\",\n\t\"responsavel\": \"Cesaasddsa\",\n\t\"horasEstimadas\": \"544\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/tarefa/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarefa",
+						"2"
+					]
+				},
+				"description": "PUT tarefa id "
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/tarefa/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/tarefa/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarefa",
+						"2"
+					]
+				},
+				"description": "DELETE tarefa ID"
+			},
+			"response": []
+		}
+	]
+}
